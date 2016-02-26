@@ -1,19 +1,68 @@
-tbody tr:hover{
-    font-weight: bold;
+form.cni{
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    /*height: 100px;*/
+    width: 70%;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 2%;
+    background-color: orange;
 }
-div#menu-right{
-    width: 20%;
+div.form-group{
+    margin-bottom: 0;
     padding: 0;
-    margin: 0 3px;
 }
-footer {
-    width: 100%;
-    background-color: #080808;
+div.form-group:hover{
+    -webkit-box-shadow: 0 0 0 1px #2ECB71;
+    -moz-box-shadow: 0 0 0 1px #2ECB71;
+    box-shadow: 0 0 0 1px #2ECB71;
+}
+div.form-group label{
+    display: inline-block;
+    color: #27AD60;
+    width: 20%;
+    font-size: xx-small;
+    text-transform: capitalize;
+    text-align: right;
+}
+div.form-group label small{
+    display: block;
+}
+/* Correcting an onwanted style of Bootstrap */
+label, input{
+    margin-bottom: 0;
+}
+.pic{
+    width: 20%;
+    overflow: hidden;
+}
+div.form-group input[type="text"], div.form-group input[type="date"], div.form-group input[type="number"]{
+    height: 12px;
+    width: 50%;
+    border: none;
+    font-size: x-small;
+    text-transform: uppercase;
+}
+.fingerprint{
+    width: 70px;
+    height: 70px;
+    border: none;
+    background-color: #fff;
     position: absolute;
     bottom: 0;
-    height: 20px;
-    text-align: center;
-    color: #c0c0c0;
+    right: 0;
+    float: left;
 }
-footer b{
-    color: #fff;}
+div.middle{
+    border: 1px dashed #2e6da4;
+}
+div.middle .pic{
+    position: relative;
+    width: 25%;
+    height: 90px;
+    float: left;
+}
+.left{
+}
